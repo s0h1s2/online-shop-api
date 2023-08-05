@@ -1,11 +1,10 @@
 # Start And Run
-How to run
 You have to install docker and docker-compose then 
 run `docker-compose up`
 the api and database server should be run.
 
 # api endpoints 
-i could use swagger but i guess the backend is pretty simple. and i assume you are using postman and to create a new `stores,products,categories` you need authorization so you have to pass `x-auth:<token>` header you and replace `<token>` with generated token from `auth` endpoint
+i assume you are using postman and to create a new `stores,products,categories` you need authorization so you have to pass `x-auth:<token>` header you and replace `<token>` with generated token from `auth` endpoint
 
 1.to authenticate send `POST` request with `{ 'username':'admin','password':'admin' }` to get json web token  
 `http://localhost:5000/api/v1/stores`
